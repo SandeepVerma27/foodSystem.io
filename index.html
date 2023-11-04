@@ -15,144 +15,174 @@
       href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap"
       rel="stylesheet"
     />
+    <!-- for icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
-    <nav id="navbar">
-      <div id="logo">
-        <img src="img/Passportsiz3.jpg" title="MyOnlineMeal.com" />
-      </div>
-      <ul>
-        <li class="item"><a href="#home">Home</a></li>
-        <li class="item"><a href="#services-container">Services</a></li>
-        <li class="item"><a href="#client-section">Our Clients</a></li>
-        <li class="item"><a href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav id="navbar">
+        <div id="logo">
+          <img src="img/Passportsiz3.jpg" title="MyOnlineMeal.com" />
+        </div>
+        <ul id="side-menu">
+          <li class="item"><a href="#home">Home</a></li>
+          <li class="item"><a href="#services-container">Services</a></li>
+          <li class="item"><a href="#client-section">Our Clients</a></li>
+          <li class="item"><a href="#contact">Contact Us</a></li>
+          <i class="fa-regular fa-circle-xmark icon" onclick="closemenu()"></i>
+        </ul>
 
-    <section id="home">
-      <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
-      <p>
-        This food delivery system project aims to create a simple and intuitive
-        web application using only HTML and CSS. The project focuses on
-        providing users with a seamless experience for ordering food online.
-      </p>
-      <p>
-        While the actual ordering and payment functionalities are beyond the
-        scope of HTML and CSS, the project will lay the foundation for a
-        visually appealing and user-friendly interface..
-      </p>
-      <button class="btn">Order Now</button>
-    </section>
+        <i class="fa-solid fa-bars icon2" onclick="openmenu()"></i>
+      </nav>
 
-    <section id="services-container">
-      <h1 class="h-primary center scale">Our Services</h1>
-      <div id="services">
-        <div class="box">
-          <img src="img/1.png" alt="" />
-          <h2 class="h-secondary center">Food Catering</h2>
-          <p class="center">
-            Welcome to my online food delivery shop design, where culinary
-            craftsmanship meets the art of celebration. Our story is one of
-            passion, flavor, and a commitment to turning every event into an
-            unforgettable experience. Born out of a shared love for exquisite
-            cuisine, [Your Catering Business Name] has evolved into a dedicated
-            team of culinary artists, event planners, and service professionals.
-          </p>
-        </div>
-        <div class="box">
-          <img src="img/2.png" alt="" />
-          <h2 class="h-secondary center">Bulk Ordering</h2>
-          <p class="center">
-            Welcome to my online food delivery shop design, where culinary
-            craftsmanship meets the art of celebration. Our story is one of
-            passion, flavor, and a commitment to turning every event into an
-            unforgettable experience. Born out of a shared love for exquisite
-            cuisine, [Your Catering Business Name] has evolved into a dedicated
-            team of culinary artists, event planners, and service professionals.
-          </p>
-        </div>
-        <div class="box">
-          <img src="img/3.png" alt="" />
-          <h2 class="h-secondary center">Food Ordering</h2>
-          <p class="center">
-            Welcome to my online food delivery shop design, where culinary
-            craftsmanship meets the art of celebration. Our story is one of
-            passion, flavor, and a commitment to turning every event into an
-            unforgettable experience. Born out of a shared love for exquisite
-            cuisine, [Your Catering Business Name] has evolved into a dedicated
-            team of culinary artists, event planners, and service professionals.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="client-section">
-      <h1 class="h-primary center scale2">Our Clients</h1>
-      <div id="clients">
-        <div class="client-item">
-          <img src="img/logo1.png" alt="Our Client" />
-        </div>
-        <div class="client-item">
-          <img src="img/logo2.png" alt="Our Client" />
-        </div>
+      <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+        <p>
+          This food delivery system project aims to create a simple and
+          intuitive web application using only HTML and CSS. The project focuses
+          on providing users with a seamless experience for ordering food
+          online.
+        </p>
+        <p>
+          While the actual ordering and payment functionalities are beyond the
+          scope of HTML and CSS, the project will lay the foundation for a
+          visually appealing and user-friendly interface..
+        </p>
+        <button class="btn">Order Now</button>
+      </section>
 
-        <div class="client-item">
-          <img src="img/logo4.png" alt="Our Client" />
+      <section id="services-container">
+        <h1 class="h-primary center scale services">Our Services</h1>
+        <div id="services">
+          <div class="box">
+            <img src="img/1.png" alt="" />
+            <h2 class="h-secondary center">Food Catering</h2>
+            <p class="center">
+              Welcome to my online food delivery shop design, where culinary
+              craftsmanship meets the art of celebration. Our story is one of
+              passion, flavor, and a commitment to turning every event into an
+              unforgettable experience. Born out of a shared love for exquisite
+              cuisine, [Your Catering Business Name] has evolved into a
+              dedicated team of culinary artists, event planners, and service
+              professionals.
+            </p>
+          </div>
+          <div class="box">
+            <img src="img/2.png" alt="" />
+            <h2 class="h-secondary center">Bulk Ordering</h2>
+            <p class="center">
+              Welcome to my online food delivery shop design, where culinary
+              craftsmanship meets the art of celebration. Our story is one of
+              passion, flavor, and a commitment to turning every event into an
+              unforgettable experience. Born out of a shared love for exquisite
+              cuisine, [Your Catering Business Name] has evolved into a
+              dedicated team of culinary artists, event planners, and service
+              professionals.
+            </p>
+          </div>
+          <div class="box">
+            <img src="img/3.png" alt="" />
+            <h2 class="h-secondary center">Food Ordering</h2>
+            <p class="center">
+              Welcome to my online food delivery shop design, where culinary
+              craftsmanship meets the art of celebration. Our story is one of
+              passion, flavor, and a commitment to turning every event into an
+              unforgettable experience. Born out of a shared love for exquisite
+              cuisine, [Your Catering Business Name] has evolved into a
+              dedicated team of culinary artists, event planners, and service
+              professionals.
+            </p>
+          </div>
         </div>
-        <div class="client-item">
-          <img src="img/logo3.png" alt="Our Client" />
-        </div>
-      </div>
-    </section>
+      </section>
+      <section id="client-section">
+        <h1 class="h-primary center scale2">Our Clients</h1>
+        <div id="clients">
+          <div class="client-item">
+            <img src="img/logo1.png" alt="Our Client" />
+          </div>
+          <div class="client-item">
+            <img src="img/logo2.png" alt="Our Client" />
+          </div>
 
-    <section id="contact">
-      <h1 class="h-primary center scale3">Contact Us</h1>
-      <div id="contact-box">
-        <form action="">
-          <div class="form-group">
-            <label for="name">Name: </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Enter your name"
-            />
+          <div class="client-item">
+            <img src="img/logo4.png" alt="Our Client" />
           </div>
-          <div class="form-group">
-            <label for="email">Email: </label>
-            <input
-              type="email"
-              name="name"
-              id="email"
-              placeholder="Enter your email"
-            />
+          <div class="client-item">
+            <img src="img/logo3.png" alt="Our Client" />
           </div>
-          <div class="form-group">
-            <label for="phone">Phone Number: </label>
-            <input
-              type="phone"
-              name="name"
-              id="phone"
-              placeholder="Enter your phone"
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Message: </label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-          <button class="btn1">Submit</button>
-        </form>
-      </div>
-    </section>
-    <footer>
-      <div class="center">
-        Copyright &copy; www.myOnlineMeal.com. All rights reserved!
-      </div>
-    </footer>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1 class="h-primary center scale3">Contact Us</h1>
+        <div id="contact-box">
+          <form action="">
+            <div class="form-group">
+              <label for="name">Name: </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                name="name"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number: </label>
+              <input
+                type="phone"
+                name="name"
+                id="phone"
+                placeholder="Enter your phone"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message: </label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button class="btn1">Submit</button>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <div class="center">
+          Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+        </div>
+      </footer>
+    </div>
+
+    <!-- javascript for the navbar  -->
+    <script>
+      const sidemenu = document.getElementById("side-menu");
+
+      function closemenu() {
+        sidemenu.style.right = "-400px";
+      }
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+    </script>
   </body>
 </html>

@@ -9,6 +9,7 @@ html {
 }
 body {
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 /* CSS Variables */
@@ -30,6 +31,9 @@ header {
   top: 0px;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.8);
+}
+.container {
+  width: 100vw;
 }
 
 /* img atl designing  */
@@ -295,4 +299,93 @@ footer {
 
 .center {
   text-align: center;
+}
+
+#navbar .icon {
+  display: none;
+}
+
+#navbar .icon2 {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  #navbar ul {
+    /* display: none; */
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    right: -400px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: right 0.3s;
+  }
+
+  #navbar ul li {
+    color: black;
+    display: block;
+    padding: 10px 50px;
+    margin: 30px 0px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  #navbar .icon {
+    display: block;
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 20px;
+    margin: 20px 140px;
+    cursor: pointer;
+  }
+
+  #navbar {
+    position: absolute;
+  }
+
+  #navbar .icon2 {
+    display: block;
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 20px;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    z-index: -1;
+  }
+
+  #logo {
+    position: relative;
+    left: -300px;
+  }
+
+  .h-primary {
+    font-size: 2rem;
+  }
+
+  .h-primary p {
+    font-size: 8px;
+  }
+
+  .services {
+    margin-top: 100px;
+  }
+  /* .bt2 {
+    margin-top: 20px;
+  } */
+}
+
+@media screen and (max-width: 650px) {
+  #logo {
+    left: -150px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    overflow-x: hidden;
+  }
 }
